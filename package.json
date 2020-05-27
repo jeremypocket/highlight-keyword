@@ -2,11 +2,12 @@
   "name": "highlight-keyword",
   "version": "1.0.0",
   "description": "highlight keyword with javascript",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "files": [
     "lib/**/*"
   ],
-  "module": "lib/index.js",
   "scripts": {
     "test": "jest --config jest.config.json",
     "build": "tsc",
