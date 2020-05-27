@@ -1,0 +1,46 @@
+{
+  "name": "highlight-keyword",
+  "version": "1.0.0",
+  "description": "highlight keyword with javascript",
+  "main": "index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "module": "lib/index.js",
+  "scripts": {
+    "test": "jest --config jest.config.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.(ts|js)\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run lint",
+    "preversion": "npm run lint",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremypocket/highlight-keyword.git"
+  },
+  "keywords": [
+    "Javascript",
+    "highlight",
+    "keyword"
+  ],
+  "author": "jeremypocket",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremypocket/highlight-keyword/issues"
+  },
+  "homepage": "https://github.com/jeremypocket/highlight-keyword#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.0.0",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.3"
+  }
+}
